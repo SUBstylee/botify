@@ -9,7 +9,7 @@
  
  **Botify commands start with `$botify`.  This keyword can be changed in `$botify property` (will update later how to do this).**
  
-- ### **BEFORE STARTING** Make sure you normalize volume.  The range is 1-200.  Setting the volume to '10' seems to be a good starting point. From there, adjust the user volume on the bot manually in Discord.
+- ### **BEFORE STARTING** Make sure you normalize volume (please do this and all commmands in #bot-commands channel, to keep server clean).  The range is 1-200.  Setting the volume to '10' seems to be a good starting point. From there, adjust the user volume on the bot manually in Discord.
 
     `$botify volume 10`
 
