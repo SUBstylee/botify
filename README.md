@@ -1,5 +1,71 @@
 ![# botify](https://raw.githubusercontent.com/robinfriedli/botify/master/resources-public/img/botify-logo-wide.png)
  Discord bot that plays Spotify tracks and YouTube videos or any URL including Soundcloud links and Twitch streams.
+ 
+ ## **Bot commands**
+ 
+ ### Use these commands in '#bot-commands' channel on discord server.
+ 
+ Check back for future additions.
+ 
+ **Botify commands start with `$botify`.  This keyword can be changed in `$botify property` (will update later how to do this).**
+ 
+- ### **BEFORE STARTING** Make sure you normalize volume.  The range is 1-200.  Setting the volume to '10' seems to be a good starting point. From there, adjust the user volume on the bot manually in Discord.
+
+    `$botify volume 10`
+
+- ### Playing a spotify playlist
+    1. Make sure you are in a voice channel and **YOU HAVE NORMALIZED VOLUME BEFORE PLAYING!**
+    2. Use the `play` command followed by the playlist url (there are a few in the #bot-commands channel you can use, or use your own)
+    
+    `$botify play PLAYLIST_URL`
+    
+    This will show a message with details about what is playing now and the next song.  Using reactions, you can go to previous track, play/pause, or go to next track.  There are also commands for these actions.
+    
+- ### Playlist commands
+    - `$botify play`
+    
+        Plays the current playlist. If paused, it will unpause the playlist.  If it is already playing, restarts current song.
+    - `$botify pause`
+    
+        Pauses the current playlist. 
+    - `$botify skip`
+    
+        Goes to next track on the current playlist.
+    - `$botify rewind`
+    
+        Goes to previous track on the current playlist.
+    - `$botify shuffle`
+    
+        Toggles shuffle on the current playlist. (sometimes this will carry over if you put on another playlist)
+    - `$botify repeatall`
+    
+        Toggles repeat on the current playlist.
+    - `$botify repeatone`
+    
+        Toggles repeat on the current song.
+    - `$botify clear`
+    
+        Empties the playlist, leaving only the currently playing song.
+    - `$botify stop`
+    
+        Stops the player and removes botify from the voice channel it is in.
+    - `$botify queue`
+    
+        This will show you a queue for the current playlist.
+        - Displays current playlist settings
+        - Link to full list of songs
+        - The 5 previous songs
+        - the currently playing song
+        - the next 5 songs
+        
+        Using reactions, you can toggle shuffle, previous, play/pause, next, repeat all, and repeat one.
+        
+     **CHECK BACK IN THE FUTURE FOR MORE COMMANDS**
+
+ 
+----
+
+## Capabilities
 
 * Play and search Spotify tracks and YouTube videos or playlists or play any URL including Soundcloud links and Twitch streams
 * Create cross-platform playlists with tracks from any source
